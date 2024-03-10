@@ -26,7 +26,7 @@ steps:
     awsCredentials: 'AWS Admin user'
     regionName: 'eu-west-1'
     scriptType: 'inline'
-    inlineScript: 'cdk deploy --ci --require-approval never'
+    inlineScript: 'cdk destroy --ci --require-approval never'
     disableAutoCwd: true
     workingDirectory: '$(System.DefaultWorkingDirectory)'
     failOnStandardError: false
